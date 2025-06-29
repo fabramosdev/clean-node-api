@@ -6,11 +6,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "keywords": [],
-  "author": "",
+  "author": "Fabiano Ramos",
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
-    "standart": "^6.1.0"
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "standard": "^17.1.2"
   }
 }
