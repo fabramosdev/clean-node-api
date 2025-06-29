@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "standart": "^6.1.0"
+  }
 }
